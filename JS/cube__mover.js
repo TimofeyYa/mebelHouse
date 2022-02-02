@@ -8,8 +8,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
     window.addEventListener('mousemove', (e)=>{
 
-        x =e.clientX/100;
-        y = e.clientY/100;
+        x =(e.clientX - 400)/80;
+        y = (e.clientY - 300)/80;
 
         sales__contentRight.style.transform = `translate(${x}px, ${y}px)`
     })
