@@ -9,10 +9,15 @@
     <link rel='stylesheet' href="./fonts/literata/stylesheet.css">
     <link rel='stylesheet' href="./CSS/reset.css">
     <link rel='stylesheet' href="./CSS/style.css">
+
+    <script src="./JS/modules/jquery-1.9.0.min.js"></script>
+    <script src="./JS/modules/jquery.maskedinput.js"></script>
+
+    <link rel='stylesheet' href="./CSS/media.css">
 </head>
 <body>
     <div class="overlay">
-        <header>
+        <header class="header ">
             <div class="container">
                 <div class="header__item header__logo">
                     <div class="header__logoPic">
@@ -24,33 +29,33 @@
                 </div>
                 <div class="header__item header__sosial">
                     <div class="header__sosialItem">
-                        <div class="header__sosialItemWrap">
+                        <a href="#" class="header__sosialItemWrap">
                             <img src="./source/ico/wa.png" alt="">
-                        </div>
+                        </a>
                     </div>
                     <div class="header__sosialItem">
-                        <div class="header__sosialItemWrap">
+                        <a href="#" class="header__sosialItemWrap">
                             <img src="./source/ico/tele.png" alt="">
-                        </div>
+                        </a>
                     </div>
                     <div class="header__sosialItem">
-                        <div class="header__sosialItemWrap">
+                        <a href="#" class="header__sosialItemWrap">
                             <img src="./source/ico/insta.png" alt="">
-                        </div>
+                        </a>
                     </div>
                     <div class="header__sosialItem">
-                        <div class="header__sosialItemWrap">
+                        <a href="#" class="header__sosialItemWrap">
                             <img src="./source/ico/tiktic.png" alt="">
-                        </div>
+                        </a>
                     </div>
                     <div class="header__sosialItem">
-                        <div class="header__sosialItemWrap">
+                        <a href="#" class="header__sosialItemWrap">
                             <img src="./source/ico/odno.png" alt="">
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="header__item header__itemContacts">
-                    <div class="header__itemContactsBtn">
+                    <div class="header__itemContactsBtn simplePop">
                         <p>Обратный звонок</p>
                     </div>
                     <div class="header__itemContactsPhone">
@@ -225,7 +230,7 @@
                                     </div>
                                 </div>
                                 <div class="spectr__button">
-                                    <button>Вызвать замерщика</button>
+                                    <button class="zamerPop">Вызвать замерщика</button>
                                 </div>
                             </div>
                             <div class="spectr__contentBg">
@@ -300,7 +305,7 @@
                                     </div>
                                 </div>
                                 <div class="spectr__button">
-                                    <button>Вызвать замерщика</button>
+                                    <button class="dizPop">Вызвать дизайнера</button>
                                 </div>
                             </div>
                             <div class="spectr__contentBg">
@@ -661,7 +666,7 @@
                         </div>
                         <div class="conditions__form">
                             <form>
-                                <input type="text">
+                                <input placeholder="+ 7 (_ _ _) - _ _ _ - _ _ - _ _ " class="phoneInp" type="text">
                                 <button class="main__btn">Вызвать мастера на замер</button>
                             </form>
                         </div>
@@ -932,8 +937,8 @@
                         </div>
                         <div class="sender__form">
                             <form action="">
-                                <input type="text">
-                                <input type="text">
+                                <input placeholder="Ваше имя" type="text">
+                                <input placeholder="+ 7 (_ _ _) - _ _ _ - _ _ - _ _ " class="phoneInp" type="text">
                                 <button class="main__btn">Отправить</button>
                             </form>
                         </div>
@@ -1045,33 +1050,33 @@
                     </div>
                     <div class="header__item header__sosial">
                         <div class="header__sosialItem">
-                            <div class="header__sosialItemWrap">
+                            <a href="#" class="header__sosialItemWrap">
                                 <img src="./source/ico/wa.png" alt="">
-                            </div>
+                            </a>
                         </div>
                         <div class="header__sosialItem">
-                            <div class="header__sosialItemWrap">
+                            <a href="#" class="header__sosialItemWrap">
                                 <img src="./source/ico/tele.png" alt="">
-                            </div>
+                            </a>
                         </div>
                         <div class="header__sosialItem">
-                            <div class="header__sosialItemWrap">
+                            <a href="#" class="header__sosialItemWrap">
                                 <img src="./source/ico/insta.png" alt="">
-                            </div>
+                            </a>
                         </div>
                         <div class="header__sosialItem">
-                            <div class="header__sosialItemWrap">
+                            <a href="#" class="header__sosialItemWrap">
                                 <img src="./source/ico/tiktic.png" alt="">
-                            </div>
+                            </a>
                         </div>
                         <div class="header__sosialItem">
-                            <div class="header__sosialItemWrap">
+                            <a href="#" class="header__sosialItemWrap">
                                 <img src="./source/ico/odno.png" alt="">
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="header__item header__itemContacts">
-                        <div class="header__itemContactsBtn">
+                        <div class="header__itemContactsBtn simplePop">
                             <p>Обратный звонок</p>
                         </div>
                         <div class="header__itemContactsPhone">
@@ -1099,6 +1104,28 @@
                 
             </div>
         </footer>
+
+
+        <div class="popup">
+            <div class="popup__content">
+                <div class="popup__contentExit">
+                    <svg height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.41418" width="24" height="2" rx="1" transform="rotate(45 1.41418 0)" fill="white"/>
+                        <rect x="18.3848" y="1.41406" width="24" height="2" rx="1" transform="rotate(135 18.3848 1.41406)" fill="white"/>
+                    </svg>
+                </div>
+                <div class="popup__contentWrap">
+                    <h3 class="formTitle">Обратный звонок</h3>
+                    <h6>Заполните форм и мы свяжемся с вами в ближайшее время</h6>
+                    <form action="">
+                        <input type="hidden" class="type__req">
+                        <input placeholder="Ваше имя" type="text">
+                        <input placeholder="+ 7 (_ _ _) - _ _ _ - _ _ - _ _ " class="phoneInp" type="text">
+                        <button class="main__btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <script src='./JS/sityChanger.js'></script>
     <script src='./JS/slider__projects.js'></script>
@@ -1108,5 +1135,7 @@
     <script src='./JS/faq.js'></script>
     <script src='./JS/video.js'></script>
     <script src='./JS/long__slider.js'></script>
+    <script src='./JS/popups.js'></script>
+    <script src='./JS/script.js'></script>
 </body>
 </html>

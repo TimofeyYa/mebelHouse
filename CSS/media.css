@@ -1,0 +1,18 @@
+@media screen and (max-width: 1200px){
+    .header__sosial{
+        padding-left: 20px;
+    }
+    .header__itemContacts{
+        grid-column-gap: 43px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .header__itemContacts{
+        flex-direction: column;
+        grid-row-gap: 10px;
+    }
+    .header__itemContactsBtn{
+        text-align: center;
+    }
+}
