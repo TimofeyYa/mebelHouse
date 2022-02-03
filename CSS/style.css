@@ -197,6 +197,7 @@ strong{
 
 .firstscreen{
     height: 95vh;
+    min-height: 1000px;
     background-image: url(../source/firstscreen/bg.png);
     background-position: center;
     background-size: cover;
@@ -259,7 +260,9 @@ strong{
     50% {opacity: 0.6;}
     to {opacity: 1;;}
 }
-
+.firstscreen__contentsItemTxt span{
+    display: block;
+}
 
 
 /* spectr */
@@ -401,6 +404,9 @@ strong{
     transition: 0.5s;
 }
 
+.projects__sliderItem img{
+    opacity: 0;
+}
 .projects__sliderItem{
     width: 904px;
     height: 536px;
@@ -432,6 +438,30 @@ strong{
     padding-top: 26px;
 }
 
+.projects__mobSlider{
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    min-height: 400px;
+    max-height: 700px;
+    display: none;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+.projects__mobSlider img{
+    display: none;
+}
+
+.projects__mobSliderControls{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
+    align-items: flex-end;
+    padding-right: 10px;
+}
 /* steps */
 .steps__content{
     display: grid;
@@ -596,11 +626,13 @@ strong{
     font-family: var(--font-literata);
     padding-top: 15px;
     padding-left: 5px;
+    text-transform: uppercase;
 }
 .order__sliderItemPic{
     overflow: hidden;
     height: 480px;
-    width: 384px;
+    max-width: 384px;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -619,8 +651,29 @@ strong{
 .order__sliderItemWrap:nth-child(n + 4){
     opacity: 0;
 }
-
-
+.order__sliderMobBlockPic{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 690px;
+    display: none;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 24px;
+}
+.order__sliderMobBlockPic img{
+    display: none;
+}
+.order__sliderMobBlockControl{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
+    padding-right: 8px;
+}
+.order__sliderMob{
+    padding-top: 30px;
+}
 /* perks */
 
 .perks{
